@@ -1,17 +1,17 @@
 from flask import Flask
 
-meu_site = Flask(__name__)
+app_cassia = Flask(__name__)
 
-@meu_site.route('/')
-@meu_site.route('/ola')
+@app_cassia.route('/')
+@app_cassia.route('/ola')
 def raiz():   #esta função está vinculada a rota raiz e a rota /ola
     return 'Olá, Turma 2025!'
 
-@meu_site.route('/contato')
+@app_cassia.route('/contato')
 def contato():
     return 'e-mail:mariela@ifro.edu.br'
 
-@meu_site.route('/rota2')
+@app_cassia.route('/rota2')
 def rota2():
     resposta = "<H3>Olá, Turma 2025! </H3>" 
     resposta += "<H4> sou a rota 2 </H4>"  #concatena string com o operador += montando uma resposta em HTML
