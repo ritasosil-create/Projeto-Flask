@@ -9,7 +9,7 @@ def raiz():   #esta função está vinculada a rota raiz e a rota /ola
 
 @app_cassia.route('/contato')
 def contato():
-    return 'e-mail:mariela@ifro.edu.br'
+    return 'e-mail:cassiarcss@ifro.edu.br'
 
 @app_cassia.route('/rota2')
 def rota2():
@@ -24,6 +24,6 @@ def saudacaoes(nome):
 
 #maiores detalhes nos slides que estão no AVA.
 if __name__ == '__main__':  #verifica se o arquivo está sendo executado diretamente, e não importado
-    meu_site.run(port=7000)
+    app_cassia.run(port=7000)
 
-meu_site.run( port=6000)    #executa caso o o arquivo seja importado, mas não é uma boa prática, pois pode gerar conflito de portas
+app_cassia.run( port=6000)    #executa caso o o arquivo seja importado, mas não é uma boa prática, pois pode gerar conflito de portas
